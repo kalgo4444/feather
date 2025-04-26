@@ -1,0 +1,58 @@
+.header {
+    background: $bgMain;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.navbar {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &__collaction {
+        display: flex;
+        gap: 36px;
+    }
+    &__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__active {
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+    &__link {
+        transition: $transition;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        &__collaction {
+            display: none;
+        }
+        &__logo {
+            left: 0;
+            transform: translateX(0);
+        }
+        &__active {
+            display: block;
+            gap: 20px;
+        }
+        &__tools {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

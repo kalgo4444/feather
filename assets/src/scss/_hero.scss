@@ -1,0 +1,144 @@
+.hero {
+    background: $bgMain;
+    position: relative;
+    min-height: 700px;
+    // border: 2px solid red;
+    img {
+        position: absolute;
+        right: 7%;
+        top: 10%;
+        scale: 1.5;
+    }
+    &__text {
+        max-width: 523px;
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        h1 {
+            font-size: 64px;
+        }
+        p {
+            margin: 18px 0 48px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1830px) {
+    .hero {
+        min-height: 670px;
+        img {
+            top: 20%;
+        }
+    }
+}
+
+@media (max-width: 1830px) {
+    .hero {
+        min-height: 580px;
+        img {
+            scale: 1.3;
+            top: 15%;
+        }
+    }
+}
+@media (max-width: 1730px) {
+    .hero {
+        img {
+            top: 15%;
+            right: 5%;
+        }
+        &__text {
+            top: 20%;
+            left: 15%;
+        }
+    }
+}
+@media (max-width: 1620px) {
+    .hero {
+        img {
+            scale: 1.2;
+            right: 3%;
+        }
+        &__text {
+            left: 15%;
+        }
+    }
+}
+@media (max-width: 1520px) {
+    .hero {
+        min-height: 550px;
+        &__text {
+            left: 15%;
+            max-width: 400px;
+        }
+    }
+}
+@media (max-width: 1390px) {
+    .hero {
+        min-height: 550px;
+        img {
+            right: 5%;
+            top: 10%;
+        }
+        &__text {
+            top: 10%;
+            left: 10%;
+            max-width: 400px;
+        }
+    }
+}
+@media (max-width: 1270px) {
+    .hero {
+        min-height: 515px;
+        &__text {
+            top: 15%;
+            left: 5%;
+            max-width: 350px;
+            h1 {
+                font-size: 56px;
+            }
+        }
+    }
+}
+@media (max-width: 1160px) {
+    .hero {
+        overflow: hidden;
+        min-height: 628px;
+        background: url("../../images/heroImg.png") no-repeat center/cover fixed;
+        img {
+            display: none;
+        }
+        &__text {
+            top: 15%;
+            left: 5%;
+            max-width: 350px;
+            z-index: 10;
+            h1 {
+                font-size: 56px;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .hero {
+        &__text {
+            padding: 0 20px;
+            max-width: 100%;
+            text-align: center;
+            left: 0;
+            top: 20%;
+            h1 {
+                font-size: 42px;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .hero {
+        &__text {
+            top: 15%;
+        }
+    }
+}
