@@ -1,0 +1,64 @@
+.shop {
+    background: $bgMain;
+    padding: 60px 0;
+    p {
+        font-size: 48px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 36px;
+    }
+    &__card {
+        border-radius: 4px;
+        margin-top: 45px;
+        &:first-child {
+            border: 2px solid #e9672b;
+            box-shadow: 7px 7px 1px #cbc6fa;
+        }
+        &:nth-child(2) {
+            border: 2px solid #225dc9;
+            box-shadow: 7px 7px 1px #e7cb43;
+        }
+        &:nth-child(3) {
+            border: 2px solid #000;
+            box-shadow: 7px 7px 1px #a2d4c5;
+        }
+        &:last-child {
+            border: 2px solid #de4333;
+            box-shadow: 7px 7px 1px #de4333;
+        }
+        img {
+            width: 100%;
+        }
+        span {
+            font-size: 17px;
+            padding: 15px 0;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .shop {
+        p{
+            font-size: 2.5rem;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 450px) {
+    .shop {
+        p{
+            font-size: 2.5rem;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+    }
+}
