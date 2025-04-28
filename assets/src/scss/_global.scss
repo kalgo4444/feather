@@ -57,3 +57,35 @@ input {
 .btnSections:active {
     background: rgb(240, 178, 112);
 }
+.keep {
+    padding: 100px 20px;
+}
+.keep__wraper {
+    max-width: 892px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    h2 {
+        font-size: 36px;
+    }
+    p {
+        margin-top: 1rem;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .keep {
+        padding: 70px 20px;
+    }
+    .keep__wraper {
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 20px;
+        }
+    }
+}

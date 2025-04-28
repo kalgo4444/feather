@@ -1,6 +1,7 @@
 .shop {
     background: $bgMain;
     padding: 60px 0;
+    overflow: hidden;
     p {
         font-size: 48px;
         text-align: center;
@@ -43,7 +44,7 @@
 
 @media (max-width: 900px) {
     .shop {
-        p{
+        p {
             font-size: 2.5rem;
         }
         &__wrapper {
@@ -53,7 +54,7 @@
 }
 @media (max-width: 450px) {
     .shop {
-        p{
+        p {
             font-size: 2.5rem;
         }
         &__wrapper {

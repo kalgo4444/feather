@@ -1,0 +1,132 @@
+.reverce {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    &__content {
+        display: flex;
+        gap: 20px;
+    }
+    &__text,
+    &__img {
+        width: 50%;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        align-items: start;
+        h3,
+        p {
+            max-width: 402px;
+            width: 100%;
+        }
+        h3,
+        p:last-child {
+            max-width: 425px;
+            width: 100%;
+        }
+        h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p,
+        a {
+            font-size: 18px;
+        }
+        a {
+            margin-top: 33px;
+            color: $mainColor;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: -4px;
+                left: 0;
+                height: 2px;
+                transform: scaleX(0);
+                transition: $transition;
+                background: $mainColor;
+            }
+            &:hover::before {
+                width: 100%;
+                transform: scaleX(1);
+            }
+        }
+    }
+    &__content:nth-child(2),
+    &__content:last-child {
+        flex-direction: row-reverse;
+        gap: 130px;
+    }
+}
+
+@media (max-width: 990px) {
+    .reverce {
+        &__text {
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            p,
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .reverce {
+        &__wrapper {
+            gap: 100px;
+        }
+        &__img {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        &__content:nth-child(2),
+        &__content:last-child {
+            flex-direction: column-reverse;
+            width: 100%;
+            gap: 30px;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__text,
+        &__img {
+            width: 100%;
+        }
+        h3,
+        p {
+            max-width: 100%;
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+        p,
+        a {
+            font-size: 18px;
+            margin: 20px auto 0;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .reverce {
+        &__text {
+            h3 {
+                font-size: 26px;
+            }
+        }
+    }
+}
