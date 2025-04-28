@@ -39,7 +39,7 @@
 
     //     return Math.max(num1, num2)
     // }
-    // console.log(maxReturn(3, 5));
+    // console.log(maxReturn(4, 12));
 }
 {
     // 6 - masala 
@@ -48,25 +48,24 @@
     //         console.log(i);
     //     }
     // }
-
-    // numberInt(3)
+    // numberInt(18)
 }
 {
     // 7 - masala
     // function arrSum(arr) {
     //     let sum = 0
-    //     for (let i = 1; i <= arr.length; i++) {
-    //         sum += i
+    //     for (let i = 0; i < arr.length; i++) {
+    //         sum += arr[i]
     //     }
     //     return sum
     // }
-    // console.log(arrSum([1, 2, 3]));
+    // console.log(arrSum([5,5,5,5]));
 }
 
 {
     // 8 - masala
     // function wordTeskari(word) {
-    //     for (let i = word.split("").length; i >= 0; i--) {            
+    //     for (let i = word.split("").length; i >= 0; i--) {
     //         console.log(word[i]);
     //     }
     // }
@@ -84,5 +83,5 @@
     //     }
     //     return sum
     // }
-    // console.log(factorial(5));
+    // console.log(factorial(4));
 }
