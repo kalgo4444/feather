@@ -64,10 +64,16 @@
 }
 
 {
-    // 8 - masala !
+    // 8 - masala
+    // function wordTeskari(word) {
+    //     for (let i = word.split("").length; i >= 0; i--) {            
+    //         console.log(word[i]);
+    //     }
+    // }
+    // wordTeskari("JavaScript")
 }
 {
-    // 9 - masala !
+    // 9 - masala !!!
 }
 {
     // 10 - masala 
