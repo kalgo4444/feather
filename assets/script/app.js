@@ -65,14 +65,30 @@
 {
     // 8 - masala
     // function wordTeskari(word) {
-    //     for (let i = word.split("").length; i >= 0; i--) {
-    //         console.log(word[i]);
+    //     let r = "";
+    //     for (let i = word.split("").length - 1; i >= 0; i--) {
+    //         r += word[i]
     //     }
+    //     console.log(r);
     // }
     // wordTeskari("JavaScript")
 }
 {
     // 9 - masala !!!
+    // function arrMax(arr) {
+    //     let max = arr[0]
+    //     for (let i = 0; i <= arr.length; i++) {
+    //         if (arr[i] > max) {
+    //             max = arr[i]
+    //         }
+    //     }
+    //     return max
+
+    //     console.log(Math.max(...arr));
+    //     let r = arr.sort((a, b) => b - a);
+    //     console.log(arr[0]);
+    // }
+    // console.log(arrMax([1, 5, 3, 7, 3, 4]));
 }
 {
     // 10 - masala 
